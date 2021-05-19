@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'popons', sans-serif;
+    background-color: rgb(27,27,27);
+    overflow-x: hidden;
+    
+}
+
+.header{
+    height: 90vh;
+    position: relative;
+}
+
+.navbar{
+    height: 110px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10;
+    position: fixed;
+}
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.heading-tertiary{
+    font-size: 3.5rem;
+}
+
+.navbar-list{
+    list-style: none;
+    font-size: 2rem;
+}
+
+.navbar-item{
+    display: inline-block;
+}
+
+.navbar-link:visited,
+.navbar-link:link{
+    text-decoration: none;
+    color: white;
+    padding: 3rem;
+    transition: all .2s ease;
+}
+
+.navbar-link:hover{
+    background-color: #e01a1a;
+    color: white;
+}
+
+.navbar-link-book:visited,
+.navbar-link-book:link{
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3.5rem;
+    border: 1px solid #f11212;
+    border-radius: 200px;
+    box-shadow: 0 0 1rem rgba(236, 118, 40, .5);
+    text-shadow: 0 .3rem 1rem rgba(255,255,255, .5);
+    transition: all .4s ease;
+}
+
+.navbar-link-book:hover{
+    background-color: #e62727;
+    color: white;
+}
+
+.toggle{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.toggle div{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    margin: 1rem;
+}
+
+ .IMAGE{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+ 
+    
+     
+}
+
+ 
+
+.header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.heading-primary{
+    font-size: 6.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+#restaurant{
+    color: #da6b1d;
+    font-weight: 800;
+    font-size: 8rem;
+}
+
+.lead{
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.book-now:visited,
+.book-now:link{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    border: 1px solid white;
+
+    border-radius: 100px;
+    transition: all .3s ease;
+    box-shadow: 0 1rem 1rem rgba(240,107,55, .1);
+    text-shadow: 0 1rem 1rem rgba(0,0,0,.6);
+}
+
+.book-now:hover{
+    background-color: #ec0c0c;
+    border: 1px solid white;
+    box-shadow: 0 0 2rem rgba(240, 55, 55, 0.8);
+}
+
+/* MENU */
+
+.menu{
+    width: 100%;
+    padding: 10rem 5rem;
+    background-image: url("background.jpg");
+}
+
+.menu-heading{
+    font-size: 12rem;
+    text-align: center;
+    text-shadow: 0 0 1rem rgba(0,0,0,.9);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-rows:repeat(2, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 2rem;
+}
+
+.heading-secondary{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.menu-img-1{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("IDLY.jpg");
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+.menu-img-2{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("DOSA.jpg");
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+.menu-img-3{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("PURY.jpg");
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+.menu-img-4{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("ROTI.jpg");
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+.menu-img-5{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("SOUTH\ INDIAN\ THALI.jpg");
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+.menu-img-6{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("VEG\ BIRIYANI.jpg");
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+.menu-img-7{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("CK\ BIRI.jpg");
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+.menu-img-8{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("pizza.jpg");
+}
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+
+.menu-p{
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu-title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.price{
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #f53232;
+    text-shadow: 0 .4rem 2rem rgba(0,0,0,.4);
+}
+.contact{
+    padding: 15rem 10 rem;
+    width:100% ;
+    background-image: url("background.jpg");
+    background-size: cover;
+
+}
+.contact-content{
+   height: auto;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   border-radius: 10PX;
+   box-shadow: black;
+
+
+}
+.left{
+    
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+ align-items: center;
+}
+.info{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: chocolate;
+}
+.rev-section{
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
+  }
+  
+  .title{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(68, 183, 236);
+    margin-bottom: .5rem;
+  }
+  .note{
+    font-size: 1.1rem;
+    color: rgb(233, 13, 13);
+    font-style: italic;
+      color: red;
+     
+  
+  }
+  
+  .reviews{
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .review{
+    margin: 0 1rem;
+    min-width: 300px;
+    flex: 1;
+  }
+  
+  .head-review{
+    margin: 1.75rem auto;
+    width: 150px;
+    height: 150px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+  }
+  
+  .body-review{
+    background-color: rgb(238, 238, 238);
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+  }
+  .name-review{
+    font-size: 1.5rem;
+    color: rgb(233, 27, 27);
+    margin-bottom: .25rem;
+  }
+  .place-review{
+    color: red;
+    font-style: italic;
+  }
+  .rating{
+    color: rgb(253, 180, 42);
+    margin: 1rem 0;
+  }
+  .desc-review{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(197, 115, 115);
+  }
+  
+  @media (max-width: 678px){
+    .review{
+      margin-top: 1.5rem;
+    }
+  }
+ 
